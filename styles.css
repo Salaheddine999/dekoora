@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "Rolla";
+  src: url("./assets/fonts/Rolla-Soft-Vintage-Typeface/Fonts/rolla-webfont.woff2")
+      format("woff2"),
+    url("./assets/fonts/Rolla-Soft-Vintage-Typeface/Fonts/rolla-webfont.woff")
+      format("woff"),
+    url("./assets/fonts/Rolla-Soft-Vintage-Typeface/Fonts/Rolla.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Filson-pro";
+  src: url("./assets/fonts/filson-pro/FilsonProBook.otf") format("opentype");
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.footer-wrapper {
+  min-height: 100vh;
+}
+
+.footer {
+  background-color: #ffb3be;
+  padding: 50px 40px 0px 40px;
+  color: #3d3d3d;
+  height: 486px;
+  margin: auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  max-width: 1344px;
+  margin: 40px auto;
+  gap: 10px;
+}
+
+.logo-space {
+  width: 120px;
+  height: auto;
+}
+
+.footer-section {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-section div {
+  max-width: 150px;
+}
+
+.footer-section h3 {
+  font-family: "Rolla";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  font-family: "Filson-pro";
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer-bottom {
+  max-width: 1344px;
+  margin: 90px auto;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.copyright {
+  font-family: "Rolla";
+  font-weight: 400;
+  font-size: 14px;
+  grid-column: 1 / 2;
+}
+
+.company-name {
+  font-family: "Rolla";
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  grid-column: 2 / 3;
+}
+
+.social-icons {
+  grid-column: 4 / 6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-text {
+  font-family: "Rolla";
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.social-icons-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 36px;
+}
+
+.payment-shipping {
+  margin-top: 0;
+  background-color: #f8efe2;
+}
+
+.payment-shipping-icons {
+  max-width: 1344px;
+  margin: 0 auto;
+  padding: 30px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 41px;
+  gap: 20px;
+}
+
+.comma {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    height: auto;
+    padding: 40px 30px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    gap: 0px;
+  }
+
+  .logo-space {
+    width: 95px;
+    height: 84px;
+    margin-left: auto;
+    order: 2;
+    position: relative;
+    top: 200px;
+  }
+
+  .hilfe {
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .uber-uns {
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .beliebte-themen {
+    display: none;
+  }
+  .top-tollektionen {
+    display: none;
+  }
+
+  .footer-bottom {
+    margin: 30px 0 15px 0;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 300px;
+    gap: 5px;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+    display: block;
+  }
+
+  .comma {
+    display: block;
+  }
+
+  .social-icons-list {
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+
+  .social-icons-list svg {
+    margin-top: 15px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .mastercard-icon,
+  .ups-icon,
+  .gls-icon,
+  .dhl-icon {
+    display: none;
+  }
+
+  .payment-shipping-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    max-width: 320px;
+    padding: 5px 30px;
+  }
+
+  .payment-shipping-icons .trustedshops-icon {
+    width: 29px;
+    height: 29px;
+    order: 1;
+  }
+
+  .payment-shipping-icons .paypal-icon {
+    width: 54px;
+    height: 14px;
+    order: 2;
+  }
+
+  .payment-shipping-icons .visa-icon {
+    width: 46px;
+    height: 15px;
+    order: 3;
+  }
+
+  .payment-shipping-icons .klarna-icon {
+    width: 30px;
+    height: 15px;
+    order: 4;
+  }
+  .comma {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .logo-space {
+    top: 145px;
+  }
+  .footer-sections {
+    width: 60%;
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 630px) {
+  .footer {
+    padding-bottom: 100px;
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+  }
+
+  .payment-shipping {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .payment-shipping-icons {
+    padding: 0px 5%;
+  }
+}
